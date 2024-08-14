@@ -1,5 +1,4 @@
 import * as React from 'react';
-import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
@@ -10,13 +9,14 @@ import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
+import Img from "../img/sapato-img.png"
 
 function Copyright(props) {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
       {'Copyright © '}
       <Link color="inherit" href="https://mui.com/">
-        Your Website
+        Sapatilla
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -24,7 +24,11 @@ function Copyright(props) {
   );
 }
 
+
+
 export default function Form() {
+
+
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -32,6 +36,7 @@ export default function Form() {
       email: data.get('email'),
       password: data.get('password'),
     });
+    data.clear()
   };
 
   return (
@@ -43,8 +48,7 @@ export default function Form() {
           sm={4}
           md={7}
           sx={{
-            backgroundImage:
-              'url("/static/images/templates/templates-images/sign-in-side-bg.png")',
+            backgroundImage: `url(${Img})`,
             backgroundColor: (t) =>
               t.palette.mode === 'light' ? t.palette.grey[50] : t.palette.grey[900],
             backgroundSize: 'cover',
@@ -63,10 +67,32 @@ export default function Form() {
           >
 
             <Typography component="h1" variant="h5">
-              Sign in
+              Cadastro
             </Typography>
             <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 1 }}>
               <TextField
+                margin="normal"
+                required
+                fullWidth
+                id="name"
+                label="Nome Completo"
+                name="nome"
+                autoComplete="text"
+                autoFocus
+                variant="standard" 
+              />
+            <TextField
+                margin="normal"
+                required
+                fullWidth
+                id="Telefone"
+                label="Seu telefone"
+                name="telefone"
+                autoComplete="telefone"
+                autoFocus
+                variant="standard" 
+              />
+                            <TextField
                 margin="normal"
                 required
                 fullWidth
@@ -75,6 +101,7 @@ export default function Form() {
                 name="email"
                 autoComplete="email"
                 autoFocus
+                variant="standard" 
               />
               <TextField
                 margin="normal"
@@ -85,10 +112,22 @@ export default function Form() {
                 type="password"
                 id="password"
                 autoComplete="current-password"
+                variant="standard" 
+              />
+            <TextField
+                margin="normal"
+                required
+                fullWidth
+                name="confirm-password"
+                label="confirm-password"
+                type="password"
+                id="confirm-password"
+                variant="standard" 
+                autoComplete="current-confirm-password"
               />
               <FormControlLabel
                 control={<Checkbox value="remember" color="primary" />}
-                label="Remember me"
+                label="Lembrar-se de mim"
               />
               <Button
                 type="submit"
@@ -96,20 +135,9 @@ export default function Form() {
                 variant="contained"
                 sx={{ mt: 3, mb: 2 }}
               >
-                Sign In
+                Cadastrar
               </Button>
-              <Grid container>
-                <Grid item xs>
-                  <Link href="#" variant="body2">
-                    Forgot password?
-                  </Link>
-                </Grid>
-                <Grid item>
-                  <Link href="#" variant="body2">
-                    {"Don't have an account? Sign Up"}
-                  </Link>
-                </Grid>
-              </Grid>
+
               <Copyright sx={{ mt: 5 }} />
             </Box>
           </Box>
