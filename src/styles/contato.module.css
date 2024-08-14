@@ -1,0 +1,38 @@
+/* Contato.module.css */
+
+.contatoContainer {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    padding-left: 15%;
+    padding-right: 15%;  
+}
+  
+  .contatoImage {
+    flex: 0 0 auto;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .contatoImage img {
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .contatoInfo {
+    flex: 1;
+  }
+  
+  .contatoInfo h2 {
+    margin-top: 0;
+  }
+  
+  .contatoInfo p {
+    margin: 5px 0;
+  }
+  
