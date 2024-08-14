@@ -18,6 +18,10 @@ const router = createBrowserRouter([
     path: "/cadastro",
     element: <Cadastro />,
   },
+  {
+    path: "/sobre-nos",
+    element: <Sobre/>
+  }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

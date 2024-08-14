@@ -1,18 +1,28 @@
-import React from 'react'
-import Style from '../styles/NavBar.module.css'
+import React from 'react';
+import Style from '../styles/NavBar.module.css';
+import { useNavigate } from 'react-router-dom';
 
-function navbar() {
+function Navbar() {  
+  const navigate = useNavigate();
+
+  const handleNavigation = () => {
+    navigate('/cadastro');
+  };
+  const handleHome = () => {
+    navigate('/');
+  };
+
   return (
     <div>
-      <header class={Style.header}>
-            <div class={Style.container}>
-                <span class={Style.texto}>CADASTRO</span>
-                <span class={Style.texto}>MENU</span>
-                <span class={Style.texto}>MARCAS</span>
-            </div>
+      <header className={Style.header}>
+        <div className={Style.container}>
+          <span className={Style.texto} onClick={handleNavigation}>CADASTRO</span>
+          <span className={Style.texto} onClick={handleHome}>MENU</span>
+          <span className={Style.texto} onClick={handleHome}>MARCAS</span>
+        </div>
       </header>
     </div>
-  )
+  );
 }
 
-export default navbar
+export default Navbar;
