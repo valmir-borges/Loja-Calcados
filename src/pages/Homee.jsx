@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../components/navbar";
 import Banner from "../components/Banner";
 import Footer from "../components/footer";
+import Marca from '../components/marca'
 import { Grid } from "@mui/material";
 import Card from "../components/BuyCard";
 import img from "../img/tenis1.jpeg";
@@ -102,6 +103,7 @@ function Homee() {
           />
         </Grid>
       </Grid>
+      <Marca/>
       <Footer />
     </div>
   );
