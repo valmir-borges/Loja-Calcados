@@ -2,12 +2,14 @@ import React from 'react'
 import style from '../styles/sobre.module.css'
 import Faixada1 from '../img/faixada-1.png'
 import Faixada2 from '../img/faixada-2.png'
-import { Footer } from 'antd/es/layout/layout'
+import Navbar from '../components/navbar'
+import Footer from '../components/footer'
 
 function sobre(){
 
     return(
         <>
+        <Navbar/>
         <section className={style.mainContainer}>
             <span className={style.title}>SOBRE A EMPRESA</span>
             <div className={style.infoContainer}>
