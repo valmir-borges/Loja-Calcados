@@ -1,0 +1,16 @@
+.img {
+    width: 600px;
+}
+.logo {
+    width: 180px;
+}
+.lastT {
+    text-decoration: none;
+    font-size: 28px;
+    color: black;
+    font-weight: 500;
+    cursor:auto;
+}
+.lastdiv {
+    margin-top: 6rem;
+}

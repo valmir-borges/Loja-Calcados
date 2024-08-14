@@ -1,9 +1,16 @@
 import React from 'react'
+import Style from '../styles/NavBar.module.css'
 
 function navbar() {
   return (
     <div>
-      <h1>TESTE</h1>
+      <header class={Style.header}>
+            <div class={Style.container}>
+                <span class={Style.texto}>HOME</span>
+                <span class={Style.texto}>MENU</span>
+                <span class={Style.texto}>MARCAS</span>
+            </div>
+      </header>
     </div>
   )
 }
