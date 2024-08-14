@@ -25,7 +25,7 @@ export default function BntHistoria(){
           okText="Sim"
           cancelText="Não"
         >
-          <Button >Conhecer mias sobre nossa história</Button>
+          <Button size='large' defaultHoverColor='#4096ff' paddingBlock='0 2px 0 rgba(5, 145, 255, 0.1)'>Conhecer mias sobre nossa história</Button>
         </Popconfirm>
       );
 }
