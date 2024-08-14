@@ -32,7 +32,6 @@ function Banner() {
             slidesPerView={3}
             navigation
             pagination={{ clickable: true }}
-            scrollbar={{ draggable: true }}
             autoplay={{delay:2000}}
             loop
             onSwiper={(swiper) => console.log(swiper)}
