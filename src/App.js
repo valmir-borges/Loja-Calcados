@@ -1,4 +1,5 @@
 import './App.css';
+import Footer from './components/footer';
 import Homee from './pages/Homee';
 
 function App() {

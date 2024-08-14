@@ -14,7 +14,7 @@ import 'swiper/css/autoplay'
 
 function Banner() {
   return (
-    <div>
+    <div className={Style.bannerDiv}>
         <div>
             <img src={Logo} alt="Imagem da logo" class={Style.logo}/>
         </div>

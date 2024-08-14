@@ -2,6 +2,7 @@ import React from 'react'
 import style from '../styles/sobre.module.css'
 import Faixada1 from '../img/faixada-1.png'
 import Faixada2 from '../img/faixada-2.png'
+import { Footer } from 'antd/es/layout/layout'
 
 function sobre(){
 
@@ -36,6 +37,7 @@ function sobre(){
                 </div>
             </div>
         </section>
+        <Footer/>
         </>
     )
 }

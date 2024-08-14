@@ -6,7 +6,7 @@ function navbar() {
     <div>
       <header class={Style.header}>
             <div class={Style.container}>
-                <span class={Style.texto}>HOME</span>
+                <span class={Style.texto}>CADASTRO</span>
                 <span class={Style.texto}>MENU</span>
                 <span class={Style.texto}>MARCAS</span>
             </div>
